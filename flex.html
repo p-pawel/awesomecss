@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+	background: black;
+	margin: 0;
+	font: 24px Helvetica;
+}
+
+#all {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+#top, #bottom {
+	flex: 1;
+	padding: 5px;
+	border-radius: 7pt;
+	background: white;
+	overflow: hidden;
+}
+
+#top {
+	margin-top: 50px;
+}
+
+#middle {
+	flex: 3;
+	overflow: hidden;
+}
+
+#middle {
+	display: flex;
+	flex-flow: row;
+}
+
+#left {
+	flex: 3;
+	border-radius: 7pt;
+	overflow: hidden;
+}
+
+#right {
+	flex: 1;
+	padding: 5px;
+	border-radius: 7pt;
+	background: darkgray;
+	overflow: hidden;
+}
+
+#left {
+	display: flex;
+	flex-flow: column;
+}
+
+#lefttop {
+	flex: 1;
+	padding: 5px;
+	border-radius: 7pt;
+	background: lightgray;
+	overflow: hidden;
+}
+#leftbottom {
+	flex: 3;
+	padding: 5px;
+	border-radius: 7pt;
+	background: gray;
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+	<div id="all">
+		<div id="top">
+			top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br /> top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />top<br />
+		</div>
+		<div id="middle">
+			<div id="left">
+				<div id="lefttop">lefttop<br/>lefttop<br/>lefttop<br/>lefttop<br/>lefttop<br/>lefttop<br/></div>
+				<div id="leftbottom">leftbottom</div>
+			</div>
+			<div id="right">right</div>
+		</div>
+		<div id="bottom">
+			bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br /> bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />bottom<br />
+		</div>
+	</div>
+</body>
+</html>
